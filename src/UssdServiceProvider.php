@@ -4,6 +4,7 @@ namespace Sparors\Ussd;
 
 use Illuminate\Support\ServiceProvider;
 use Sparors\Ussd\Commands\ActionCommand;
+use Sparors\Ussd\Commands\ConfiguratorCommand;
 use Sparors\Ussd\Commands\StateCommand;
 
 class UssdServiceProvider extends ServiceProvider
@@ -61,6 +62,7 @@ class UssdServiceProvider extends ServiceProvider
         $this->commands([
             StateCommand::class,
             ActionCommand::class,
+            ConfiguratorCommand::class,
         ]);
     }
 }
