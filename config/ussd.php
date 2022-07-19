@@ -26,6 +26,18 @@ return [
 
     'action_namespace' => env('USSD_ACTION_NS', 'App\\Http\\Ussd\\Actions'),
 
+    /*
+    |--------------------------------------------------------------------------
+    | Configurator Class Namespace
+    |--------------------------------------------------------------------------
+    |
+    | This value sets the root namespace for Configurators used to simplify
+    | ussd machine in your application.
+    |
+    */
+
+    'configurator_namespace' => env('USSD_CONFIGURATOR_NS', 'App\\Http\\Ussd\\Configurator'),
+
      /*
     |--------------------------------------------------------------------------
     | Store
